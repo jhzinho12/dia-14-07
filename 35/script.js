@@ -1,4 +1,4 @@
-// 1. ESTRUTURA DE DADOS DAS PERGUNTAS
+
 const perguntas = [
   {
     pergunta: "Qual é a capital do Brasil?",
@@ -80,7 +80,7 @@ function verificarResposta(indiceEscolhido) {
     pontuacao++;
   } else {
     botoes[indiceEscolhido].classList.add('incorreta');
-    botoes[p.respostaCorreta].classList.add('correta'); // mostra a correta
+    botoes[p.respostaCorreta].classList.add('correta'); 
   }
   
 

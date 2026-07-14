@@ -1,13 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Painel de Senhas</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="style.css">
 <body>
-    
-    <script src="script.js"></script>
+  <div class="wrapper">
+
+
+    <section class="area-operador">
+      <h2>Área do Operador</h2>
+      
+      <div class="botoes">
+        <button id="btn-normal" class="btn-normal">Gerar Senha Normal</button>
+        <button id="btn-preferencial" class="btn-preferencial">Gerar Senha Preferencial</button>
+      </div>
+
+      <div class="botoes">
+        <button id="btn-chamar" class="btn-chamar">Chamar Próximo</button>
+      </div>
+
+      <div class="filas">
+        <p>Na fila Normal: <span id="qtd-normal">0</span></p>
+        <p>Na fila Preferencial: <span id="qtd-preferencial">0</span></p>
+      </div>
+    </section>
+
+    <section class="area-painel">
+      <h1>Painel de Chamadas</h1>
+      
+      <div class="senha-atual">
+        <p class="label">SENHA ATUAL</p>
+        <p id="senha-display">---</p>
+        <p class="label-pequeno">Comparecer ao Guichê</p>
+      </div>
+
+      <div class="ultimas-chamadas">
+        <h3>Últimas 3 Chamadas</h3>
+        <ul id="lista-ultimas">
+          <li>---</li>
+          <li>---</li>
+          <li>---</li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
