@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+
+  
+    <section id="tela-inicial" class="tela">
+      <h1>Quiz de Conhecimentos Gerais</h1>
+      <p>Teste seus conhecimentos! São 5 perguntas com tempo pra pensar.</p>
+      <button id="btn-iniciar">Iniciar Quiz</button>
+    </section>
+
+   
+    <section id="tela-pergunta" class="tela escondido">
+      <div class="info">
+        <span id="contador-pergunta">Pergunta 1 de 5</span>
+        <span id="pontos">Pontos: 0</span>
+      </div>
+      
+      <h2 id="pergunta-texto"></h2>
+      
+      <div id="opcoes" class="opcoes">
+
+      </div>
+    </section>
+
+    <section id="tela-final" class="tela escondido">
+      <h1>Fim de Jogo!</h1>
+      <p id="resultado-pontuacao"></p>
+      <p id="mensagem-final"></p>
+      <button id="btn-reiniciar">Jogar Novamente</button>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
